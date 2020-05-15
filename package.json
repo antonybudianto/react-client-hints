@@ -1,0 +1,60 @@
+{
+  "name": "react-client-hints",
+  "version": "0.2.0",
+  "description": "React Client Hints",
+  "main": "dist/react-client-hints.js",
+  "umd:main": "dist/react-client-hints.umd.js",
+  "source": "src/react-client-hints.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle --jsx=React.createElement",
+    "dev": "microbundle watch --jsx=React.createElement --compress=false",
+    "prerelease": "npm run build",
+    "release": "npm publish --access public",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:ci": "jest --coverage",
+    "prt": "prettier src/**/*.js --write"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonybudianto/react-client-hints.git"
+  },
+  "keywords": [
+    "react",
+    "client hints"
+  ],
+  "author": "Antony Budianto <antonybudianto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonybudianto/react-client-hints/issues"
+  },
+  "homepage": "https://github.com/antonybudianto/react-client-hints#readme",
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/polyfill": "7.6.0",
+    "@babel/preset-env": "7.6.0",
+    "@babel/preset-react": "7.0.0",
+    "@testing-library/react": "9.1.4",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.9.0",
+    "eslint": "6.3.0",
+    "eslint-plugin-jest": "22.17.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "jest": "24.9.0",
+    "microbundle": "0.7.0",
+    "prettier": "1.18.2",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  }
+}
