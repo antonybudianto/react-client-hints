@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/antonybudianto/react-client-hints.svg?branch=master)](https://travis-ci.org/antonybudianto/react-client-hints)
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/7658554/49334914-f4ff8c80-f613-11e8-820b-49a5b446d889.png">
+<img src="https://user-images.githubusercontent.com/7658554/82079373-f68c1a00-970c-11ea-83a4-e3644f2343ad.png">
 </p>
 
 React Client Hints Hooks, Component, and Provider. SSR-ready and fully unit-tested.
