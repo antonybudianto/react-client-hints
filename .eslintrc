@@ -7,7 +7,7 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "off",
     "no-useless-catch": "off"
   },
   "parserOptions": {

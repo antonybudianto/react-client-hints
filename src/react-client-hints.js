@@ -17,7 +17,8 @@ export const ClientHintsProvider = ({ header = {}, children }) => {
     rtt: header['RTT'],
     downlink: header['Downlink'],
     ect: header['ECT'],
-    deviceMemory: header['Device-Memory']
+    deviceMemory: header['Device-Memory'],
+    saveData: header['Save-Data'],
   });
 
   useEffect(() => {
@@ -30,7 +31,7 @@ export const ClientHintsProvider = ({ header = {}, children }) => {
         console.error(e);
       }
 
-      const { downlink, rtt, effectiveType: ect } =
+      const { downlink, rtt, saveData, effectiveType: ect } =
         typeof navigator.connection !== 'undefined' ? navigator.connection : {};
 
       setCh({
@@ -39,7 +40,8 @@ export const ClientHintsProvider = ({ header = {}, children }) => {
         rtt,
         downlink,
         ect,
-        deviceMemory: navigator.deviceMemory
+        saveData,
+        deviceMemory: navigator.deviceMemory,
       });
     }
 
@@ -57,7 +59,7 @@ export const ClientHintsProvider = ({ header = {}, children }) => {
 
 ClientHintsProvider.propTypes = {
   header: PropTypes.object,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export const useClientHints = () => useContext(ClientHintsContext);
