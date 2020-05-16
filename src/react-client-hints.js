@@ -43,7 +43,7 @@ export const ClientHintsProvider = ({ header = {}, children }) => {
       });
     }
 
-    if (typeof navigator.getUserAgent === 'function') {
+    if (typeof navigator.getUserAgent === 'function' && !ch.ua) {
       getUserAgent();
     }
   }, []);
