@@ -1,6 +1,6 @@
 {
   "name": "react-client-hints",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React Client Hints",
   "main": "dist/react-client-hints.js",
   "umd:main": "dist/react-client-hints.umd.js",
