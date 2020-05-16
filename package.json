@@ -1,6 +1,6 @@
 {
   "name": "react-client-hints",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Client Hints",
   "main": "dist/react-client-hints.js",
   "umd:main": "dist/react-client-hints.umd.js",
@@ -39,22 +39,22 @@
     "react": "^16.9.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.0",
-    "@babel/polyfill": "7.6.0",
-    "@babel/preset-env": "7.6.0",
-    "@babel/preset-react": "7.0.0",
-    "@testing-library/react": "9.1.4",
-    "babel-eslint": "10.0.3",
-    "babel-jest": "24.9.0",
-    "eslint": "6.3.0",
-    "eslint-plugin-jest": "22.17.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "7.14.3",
-    "jest": "24.9.0",
-    "microbundle": "0.7.0",
-    "prettier": "1.18.2",
+    "@babel/core": "7.9.6",
+    "@babel/polyfill": "7.8.7",
+    "@babel/preset-env": "7.9.6",
+    "@babel/preset-react": "7.9.4",
+    "@testing-library/react": "10.0.4",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.0.1",
+    "eslint": "7.0.0",
+    "eslint-plugin-jest": "23.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "7.20.0",
+    "jest": "26.0.1",
+    "microbundle": "0.12.0",
+    "prettier": "2.0.5",
     "prop-types": "15.7.2",
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
