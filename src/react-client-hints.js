@@ -23,26 +23,23 @@ export const ClientHintsProvider = ({ header = {}, children }) => {
 
   useEffect(() => {
     async function getUserAgent() {
-      let chValue = {};
-
       try {
-        chValue = await navigator.getUserAgent();
+        const chValue = await navigator.getUserAgent();
+        const { downlink, rtt, saveData, effectiveType: ect } =
+          'connection' in navigator ? navigator.connection : {};
+
+        setCh({
+          ...chValue,
+          dpr: window.devicePixelRatio,
+          rtt,
+          downlink,
+          ect,
+          saveData,
+          deviceMemory: navigator.deviceMemory,
+        });
       } catch (e) {
         console.error(e);
       }
-
-      const { downlink, rtt, saveData, effectiveType: ect } =
-        typeof navigator.connection !== 'undefined' ? navigator.connection : {};
-
-      setCh({
-        ...chValue,
-        dpr: window.devicePixelRatio,
-        rtt,
-        downlink,
-        ect,
-        saveData,
-        deviceMemory: navigator.deviceMemory,
-      });
     }
 
     if (typeof navigator.getUserAgent === 'function' && !ch.ua) {
